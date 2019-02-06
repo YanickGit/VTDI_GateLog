@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace VTDI_GateLog
 {
-    public partial class Form1 : Form
+    public partial class FRM_Login : Form
     {
-        public Form1()
+        public FRM_Login()
         {
             InitializeComponent();
         }
+
     }
 }
