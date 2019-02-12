@@ -70,6 +70,7 @@
             this.TB_Password.Name = "TB_Password";
             this.TB_Password.Size = new System.Drawing.Size(239, 26);
             this.TB_Password.TabIndex = 2;
+            this.TB_Password.UseSystemPasswordChar = true;
             // 
             // LBL_UserLogin
             // 
@@ -89,6 +90,7 @@
             this.BTN_Submit.TabIndex = 3;
             this.BTN_Submit.Text = "SUBMIT";
             this.BTN_Submit.UseVisualStyleBackColor = true;
+            this.BTN_Submit.Click += new System.EventHandler(this.BTN_Submit_Click);
             // 
             // BTN_Clear
             // 
@@ -98,6 +100,7 @@
             this.BTN_Clear.TabIndex = 4;
             this.BTN_Clear.Text = "CLEAR";
             this.BTN_Clear.UseVisualStyleBackColor = true;
+            this.BTN_Clear.Click += new System.EventHandler(this.BTN_Clear_Click);
             // 
             // BTN_ForgetPass
             // 
@@ -143,6 +146,7 @@
             this.Controls.Add(this.LBL_UserLogin);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FRM_Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

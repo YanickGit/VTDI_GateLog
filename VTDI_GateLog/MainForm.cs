@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VTDI_GateLog._02.GateLogs;
 
 namespace VTDI_GateLog
 {
@@ -48,7 +49,11 @@ namespace VTDI_GateLog
 
         private void gateInOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Gate In and Out was clicked!!");
+            //MessageBox.Show("Login was clicked!!");
+            FRM_GateInOut GateInOut = new FRM_GateInOut(); //Declaring an object for the Login Form
+            GateInOut.MdiParent = this; // Looking the child forn to the parent
+            GateInOut.Show(); // Used to display the form
+            //MessageBox.Show("Gate In and Out was clicked!!");
         }
 
         private void guestListToolStripMenuItem_Click(object sender, EventArgs e)
@@ -59,6 +64,14 @@ namespace VTDI_GateLog
         private void gateInOutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("User Management was clicked!!");
+        }
+
+        private void FRM_Main_Load(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Login was clicked!!");
+            FRM_Login LogIn = new FRM_Login(); //Declaring an object for the Login Form
+            LogIn.MdiParent = this; // Looking the child forn to the parent
+            LogIn.Show(); // Used to display the form
         }
     }
 }
